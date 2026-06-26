@@ -123,15 +123,10 @@ button[type="submit"]:hover {
   display: block;
 }
 
-hr {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  color: var(--primary);
-}
 
 .vertical-nav {
   width: 200px;
-  background: #2c3e50;
+  background: var(--primary);
   padding: 20px 0;
   height: 100vh; /* full height */
   position: fixed;
@@ -155,8 +150,19 @@ hr {
   border-radius: 1rem;
 }
 .vertical-nav li a:hover {
-  background: #34495e;
+  background: var(--secondary);
 }
 .vertical-nav li.active a {
-  background: var(--primary);
+  background: var(--ghost-white);
+  color: var(--primary);
+}
+
+.page-header{
+    position: absolute;
+    background: var(--primary);
+    width: calc(100vw - 200px);
+    height: 5rem;
+    top:0;
+    left: 200px;
+    text-align: center;
 }
