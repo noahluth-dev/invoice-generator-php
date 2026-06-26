@@ -9,7 +9,7 @@
     <div class="main-wrapper">
     <?php include '../components/navbar.php'; ?>
     <div class="content">
-        <p>dashboard</p>
+        <p>invoices</p>
     </div>
 </div>
 </body>

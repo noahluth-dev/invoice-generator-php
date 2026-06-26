@@ -22,6 +22,14 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
 }
+.main-wrapper {
+  display: flex;
+}
+.content {
+  margin-left: 200px; /* same as navbar width */
+  padding: 20px;
+  flex: 1;
+}
 
 .container {
   width: 100%;
@@ -115,8 +123,40 @@ button[type="submit"]:hover {
   display: block;
 }
 
-hr{
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-    color: var(--primary);
+hr {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+.vertical-nav {
+  width: 200px;
+  background: #2c3e50;
+  padding: 20px 0;
+  height: 100vh; /* full height */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.vertical-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.vertical-nav li {
+  padding: 3px 5px;
+}
+.vertical-nav li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  display: block;
+  font-size: 1.6rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.vertical-nav li a:hover {
+  background: #34495e;
+}
+.vertical-nav li.active a {
+  background: var(--primary);
 }
