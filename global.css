@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #9381ffff;
+  --secondary: #b8b8ffff;
+  --ghost-white: #f8f7ffff;
+  --antique-white: #ffeeddff;
+  --peach-fuzz: #ffd8beff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--ghost-white);
+}
+.form-container {
+  background-color: var(--ghost-white);
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 1rem 1rem var(--antique-white);
+  min-width: 20%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid var(--secondary);
+}
+
+.form-container h1 {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+label {
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+  margin-bottom: 0.5rem;
+  height: 3rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding-left: 1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--secondary);
+  font-family: "Outfit", sans-serif;
+  transition: 0.1s ease-in-out;
+}
+
+textarea {
+  height: 5rem;
+}
+
+input:hover,
+textarea:hover {
+  border-bottom: 0.2rem solid var(--primary);
+}
+
+input:focus,
+textarea:focus {
+  border-bottom: 0.2rem solid var(--primary);
+}
+
+button[type="submit"] {
+  background: var(--primary);
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  border-radius: 2rem;
+  transition: 0.5s ease;
+  font-family: "Outfit", sans-serif;
+  color: var(--ghost-white);
+}
+
+button[type="submit"]:hover {
+  background: var(--primary);
+  box-shadow: inset 0 0 0 0.3rem var(--secondary);
+}
+
+.error-message {
+  color: red;
+  display: block;
+}
+
+.navigate-link {
+  text-decoration: none;
+  font-size: 1.4rem;
+  text-align: center;
+  color: var(--primary);
+  margin-top: 1rem;
+  display: block;
+}
+
+hr{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    color: var(--primary);
+}
