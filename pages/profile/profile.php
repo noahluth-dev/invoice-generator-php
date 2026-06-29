@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../global.css">
     <title>Document</title>
 </head>
 <body>
     <div class="main-wrapper">
-    <?php include '../components/navbar.php'; ?>
+    <?php include '../../components/navbar.php'; ?>
     <div class="content">
-        <header class="page-header">
-            <h3>Invoices</h3>
-        </header>
+        <p>profile</p>
     </div>
 </div>
 </body>

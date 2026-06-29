@@ -20,14 +20,17 @@ $current_page = basename($_SERVER['PHP_SELF']);
     <ul>
         <?php if (isset($_SESSION['user_id'])): ?>
             <!-- Logged-in links -->
-            <li class="<?php echo ($current_page == 'dashboard.php') ? 'active' : ''; ?>">
-                <a href="index.php">Dashboard</a>
+            <li class="<?php echo ($current_page == 'index.php') ? 'active' : ''; ?>">
+                <a href="/projects/invoice-generator-php/pages/index.php">Dashboard</a>
             </li>
             <li class="<?php echo ($current_page == 'invoices.php') ? 'active' : ''; ?>">
-                <a href="invoices.php">Invoices</a>
+                <a href="/projects/invoice-generator-php/pages/invoice/invoices.php">Invoices</a>
+            </li>
+            <li class="<?php echo ($current_page == 'client.php') ? 'active' : ''; ?>">
+                <a href="/projects/invoice-generator-php/pages/client/client.php">Client</a>
             </li>
             <li class="<?php echo ($current_page == 'profile.php') ? 'active' : ''; ?>">
-                <a href="profile.php">Profile</a>
+                <a href="/projects/invoice-generator-php/pages/profile/profile.php">Profile</a>
             </li>
             <li><a href="logout.php">Logout</a></li>
         <?php else: ?>

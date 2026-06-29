@@ -1,0 +1,160 @@
+.form-container{
+margin: 1rem;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.form-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.form-row .form-group {
+  flex: 1;
+  min-width: 150px;
+}
+.items-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+}
+.items-table th {
+  background: #f1f5f9;
+  text-align: left;
+  padding: 10px;
+}
+.items-table td {
+  padding: 8px;
+  border-bottom: 1px solid #e2e8f0;
+}
+.items-table input {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.items-table .qty,
+.items-table .price {
+  width: 80px;
+}
+.btn-add {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-remove {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+.btn-submit {
+  background: #10b981;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+.btn-submit:hover {
+  background: #059669;
+}
+.btn-cancel {
+  background: #64748b;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.btn-cancel:hover {
+  background: #475569;
+}
+.summary {
+  background: #f8fafc;
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 15px;
+  text-align: right;
+}
+.summary p {
+  margin: 5px 0;
+  font-size: 1.1rem;
+}
+.summary .grand-total {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+.error-message {
+  color: #dc2626;
+  background: #fee2e2;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+.actions-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.inline-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+}
+.status-draft {
+  background: #e2e8f0;
+  color: #475569;
+}
+.status-sent {
+  background: #fef3c7;
+  color: #92400e;
+}
+.status-paid {
+  background: #d1fae5;
+  color: #065f46;
+}
+.status-overdue {
+  background: #fee2e2;
+  color: #991b1b;
+}
+.status-cancelled {
+  background: #f1f5f9;
+  color: #64748b;
+}
