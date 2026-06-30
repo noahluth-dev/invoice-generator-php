@@ -32,14 +32,14 @@ $current_page = basename($_SERVER['PHP_SELF']);
             <li class="<?php echo ($current_page == 'profile.php') ? 'active' : ''; ?>">
                 <a href="/projects/invoice-generator-php/pages/profile/profile.php">Profile</a>
             </li>
-            <li><a href="logout.php">Logout</a></li>
+            <li><a href="/projects/invoice-generator-php/pages/logout.php">Logout</a></li>
         <?php else: ?>
             <!-- Guest links -->
             <li class="<?php echo ($current_page == 'login.php') ? 'active' : ''; ?>">
-                <a href="login.php">Login</a>
+                <a href="/projects/invoice-generator-php/pages/login.php">Login</a>
             </li>
             <li class="<?php echo ($current_page == 'signup.php') ? 'active' : ''; ?>">
-                <a href="signup.php">Sign Up</a>
+                <a href="/projects/invoice-generator-php/pages/signup.php">Sign Up</a>
             </li>
         <?php endif; ?>
     </ul>

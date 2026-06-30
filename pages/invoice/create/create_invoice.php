@@ -137,7 +137,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $conn->commit();
     $success = true;
-    header("Location: invoices.php?msg=created");
+    header("Location: /projects/invoice-generator-php/pages/invoice/invoices.php?msg=created");
     exit();
 } catch (Exception $e) {
     $conn->rollback();
