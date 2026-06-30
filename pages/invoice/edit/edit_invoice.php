@@ -151,7 +151,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             $conn->commit();
             $success = true;
-            header("Location: view_invoice.php?id=" . $invoice_id . "&msg=updated");
+            header("Location: /projects/invoice-generator-php/pages/invoice/view/view_invoice.php?id=" . $invoice_id . "&msg=updated");
             exit();
         } catch (Exception $e) {
             $conn->rollback();
